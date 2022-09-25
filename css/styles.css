@@ -137,9 +137,8 @@ body {
 
 .hero {
   background-color: #2f303a;
-  width: 1600px;
   height: 600px;
-  padding: 200px 452px;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -175,7 +174,10 @@ body {
 /* ------SECTION 1---------- */
 
 .section {
-  padding: 94px 0px;
+  padding-top: 94px;
+}
+.section:last-child {
+  padding-bottom: 94px;
 }
 
 .sections-flex {
@@ -200,6 +202,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-title);
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -228,7 +231,11 @@ body {
 /* ----------SECTION 3----------- */
 
 .team {
-background-color: #F5F4FA;
+  background-color: #F5F4FA;
+}
+
+.text {
+  padding: 20px 24px;
 }
 
 .team-title {
@@ -247,6 +254,11 @@ background-color: #F5F4FA;
 .team-item {
 }
 
+.teams-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-people {
   font-weight: 500;
   font-size: 16px;
@@ -254,7 +266,6 @@ background-color: #F5F4FA;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-title);
-  margin-top: 30px;
 }
 
 .team-text {
@@ -262,7 +273,6 @@ background-color: #F5F4FA;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 10px;
 }
 
 /* ---------FOOTER---------- */
@@ -291,6 +301,11 @@ background-color: #F5F4FA;
 }
 
 .address-item {
+  margin-bottom: 9px;
+}
+
+.address-item:last-child {
+  margin-bottom: 0;
 }
 
 .footer-geo {
@@ -316,6 +331,15 @@ background-color: #F5F4FA;
 
 /* --------------------------PORTFOLIO--------------------------------- */
 
+.project-main {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.project {
+  margin-top: 33.5px;
+}
+
 .project-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -323,7 +347,6 @@ background-color: #F5F4FA;
 }
 
 .main-list {
-  padding-top: 114px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,7 +369,6 @@ background-color: #F5F4FA;
   background-color: #F5F4FA;
   font-size: 16px;
   padding: 5.91px 22px;
-
 }
 
 .main-btn:hover,
@@ -355,16 +377,14 @@ background-color: #F5F4FA;
   background-color: #2196F3;
 }
 
-.project {
-  padding-top: 49.26px;
-  padding-bottom: 94px;
-}
 
 .project-list {
 }
 
 .project-link {
-  width: calc((100%-60px) / 3);
+  width: calc((100% - 60px) / 3);
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
 }
 
 .project-picture {
@@ -375,12 +395,10 @@ background-color: #F5F4FA;
   letter-spacing: 0.06em;
   color: var(--color-title);
   font-size: 18px;
-  margin-top: 19.71px;
 }
 
 .project-text {
   line-height: 1.88;
   letter-spacing: 0.03em;
   font-size: 16px;
-  margin-top: 3.94px;
 }
